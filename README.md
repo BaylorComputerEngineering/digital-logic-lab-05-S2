@@ -44,6 +44,7 @@
 	 | **z** or **Z** | high impedence (tri-stated or floating) | Blue |
 	 | **x** or **X** | unknown or uninitialized or don't-care | Red |
 
+- [Operators](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=33)
 - [Module Definition](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=12)
 
   Example:
