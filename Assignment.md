@@ -24,6 +24,8 @@ Your simulation sets should look something like this before you submit:
 - All source files (.v files) **must** be stored in src folder
 - All waveform configuation (.wcfg files, when you save the simulation setting) files **must** be stored in sim folder
 
+## Problems
+
 ### 1. Implement and test a two bits ripple adder (5 pts)
 - Name the simulation set as "ripple_test"
 - Name the ripple adder module as "ripple_adder"
