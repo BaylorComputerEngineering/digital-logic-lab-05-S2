@@ -89,17 +89,29 @@
 
   endmodule // fulladder
   ```
-  - **Must** use dot syntax to instantiate a module
+  - **Must** use dot syntax to instantiate modules for assignments
 
 - [Primitive Instances](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=23)
   - Primitive instances do not use dot syntax
 
+- [Vector Bit Select and Part Selects](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=23)
+  Example:
+  ```verilog
+  module ripple_adder_2bits(input [1:0] a, b,
+                            input cin,
+                            output [1:0] sum,
+                            output cout);
+  endmodule
+  ```
+  Here, the two inputs a, b are vector bits, which means they are 2-bit input wires. While sum is a 2-bit output wire.
+  
 - [Procedural Blocks](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=25)
   - ```initial```
     - Mostly used in simulation (or initializing registers, depending on compiler support)
     - Could have multiple ```initial``` block
   - ```always```
     - It is used for defining behaviors of **reg** type
+    - We will talk more about this in the future
 
 <!-- - [Common System Tasks and Functions](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=42) -->
 - [Generate Block](http://sutherland-hdl.com/pdfs/verilog_2001_ref_guide.pdf#page=25)
